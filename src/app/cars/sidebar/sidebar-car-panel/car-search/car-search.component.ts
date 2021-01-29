@@ -18,7 +18,7 @@ export class CarSearchComponent implements OnInit {
   ngOnInit(): void {
     this.priorityFilter.valueChanges
     .pipe(
-        debounceTime(50),
+        debounceTime(500),
         distinctUntilChanged()
     )
     .subscribe(value => {
