@@ -29,10 +29,6 @@ export class CarService {
     }
   }
 
-  getAllCars(): Observable<Car[]> {
-    return this.carSelectorService.getAllCars$();
-  }
-
   private generateCar(): Car {
     return {
       id: this.carCounter++,
@@ -43,10 +39,14 @@ export class CarService {
     } as Car;
   }
 
-  createCar(form: {name: string}): void {
+  getAllCars(): Observable<Car[]> {
+    return this.carSelectorService.getAllCars$();
+  }
+
+  createCar(brandCar: string): void {
     const newCar = {
       id: this.carCounter++,
-      brand : form.name,
+      brand : brandCar,
       color : makeColor(),
       price: makePrice(),
       productionYear: makeYear()

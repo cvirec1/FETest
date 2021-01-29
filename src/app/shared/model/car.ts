@@ -6,7 +6,4 @@ export class Car {
     productionYear: number;
 }
 
-export class CarSummary {
-    description: string;
-    count: number;
-}
+

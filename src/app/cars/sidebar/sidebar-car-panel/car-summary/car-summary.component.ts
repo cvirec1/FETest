@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { CarSummary } from 'src/app/shared/model/car';
+
+import { CarSummary } from 'src/app/shared/model/carSummary';
 
 @Component({
   selector: 'app-car-summary',

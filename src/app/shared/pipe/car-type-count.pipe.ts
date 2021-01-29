@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { Car, CarSummary } from '../model/car';
-import { CarTypePipe } from './car-type.pipe';
+import { Car } from '../model/car';
+import { CarSummary } from '../model/carSummary';
 
 @Pipe({
   name: 'carTypeCount'

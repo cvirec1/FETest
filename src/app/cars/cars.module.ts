@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CarsRoutingModule } from './cars-routing.module';
 import { CarListComponent } from './sidebar/sidebar-car-panel/car-list/car-list.component';

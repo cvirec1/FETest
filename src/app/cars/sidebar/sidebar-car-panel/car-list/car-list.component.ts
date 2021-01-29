@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+
 import { Car } from 'src/app/shared/model/car';
 
 @Component({
