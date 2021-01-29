@@ -5,9 +5,10 @@ import { Car } from '../model/car';
   name: 'carType'
 })
 export class CarTypePipe implements PipeTransform {
+  currentYear: number = new Date().getFullYear();
 
   transform(car: Car): string {
-    return car.price > 20000 && car.productionYear > 2016 ? 'Expensive' : 'Fair';
+    return car.price > 20000 && (car.productionYear > this.currentYear - 5) ? 'Expensive' : 'Fair';
   }
 
 }

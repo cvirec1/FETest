@@ -8,12 +8,13 @@ import { CarSummary } from '../model/carSummary';
 })
 export class CarTypeCountPipe implements PipeTransform {
   summaryCars: CarSummary[];
+  currentYear: number = new Date().getFullYear();
 
   transform(cars: Car[]): CarSummary[] {
     let fair = 0;
     let expensive = 0;
     cars.forEach(car => {
-      car.price > 20000 && car.productionYear > 2016 ? expensive++ : fair++;
+      car.price > 20000 && car.productionYear > (this.currentYear - 5) ? expensive++ : fair++;
     });
     this.summaryCars = [{
       description: 'Expensive',
