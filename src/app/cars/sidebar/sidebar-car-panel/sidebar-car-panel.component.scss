@@ -1,0 +1,27 @@
+.header,.body,.footer {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  
+  .header {
+    display: block;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+  }
+  
+  .body {
+    display: block;
+    height: 100%;
+  }
+  
+  .footer {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    background: white;
+    z-index: 1;
+  } 

@@ -1,0 +1,22 @@
+:host {
+    display: block;
+    height: 100%;
+  }
+  
+  .side-bar-wrapper {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid #cccccc;
+    float: left;
+  }
+  
+  .detail-wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .centered {
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+  }

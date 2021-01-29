@@ -1,0 +1,15 @@
+<ul class="list-group"
+    *ngFor="let car of carList">
+    
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="workName">{{ car.brand }}</span>
+            <span class="workName">{{ car.color }}</span>
+            <span class="workName">{{ car.price }}</span>
+        
+            <span class="badge badge-pill">
+                  {{car | carType}}
+            </span>
+              
+        </li>     
+
+</ul>

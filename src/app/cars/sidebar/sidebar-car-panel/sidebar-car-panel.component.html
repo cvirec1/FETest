@@ -1,0 +1,5 @@
+<aside>
+    <app-car-search class="header" (filterCars)="onFilter($event)"></app-car-search>
+    <app-car-list class="body" [carList]="cars"></app-car-list>
+    <app-car-summary class="footer" [summaryCars]="cars | carTypeCount"></app-car-summary>
+</aside>
