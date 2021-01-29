@@ -1,5 +1,5 @@
-.header,.body,.footer {
-    padding: 1rem 1rem 1rem 1rem;
+.header,.footer {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   
   .header {
@@ -8,6 +8,7 @@
     top: 0;
     background: white;
     z-index: 1;
+    height: 56px;
   }
   
   .body {
