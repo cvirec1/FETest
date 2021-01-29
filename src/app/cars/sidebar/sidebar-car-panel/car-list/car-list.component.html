@@ -2,17 +2,18 @@
     *ngFor="let car of carList">
     
         <li class="list-group-item d-flex justify-content-between align-items-center">
-            <div class="car-data">
-                
-            <p class="car-brand">{{ car.id }}. {{ car.brand }}</p>
-            <p class="car-color">{{ car.color }}</p>
-            <p class="car-price">{{ car.price }} €</p>
+
+            <div class="car-data">                
+                <p class="car-brand">{{ car.id }}. {{ car.brand }}</p>
+                <p class="car-color">{{ car.color }}</p>
+                <p class="car-price">{{ car.price }} €</p>
             </div>
+
             <div class="car-info">
                 <p class="car-year">{{ car.productionYear }}</p>
         
                 <span class="badge badge-pill"
-                    [ngClass]="(car.price > 20000 && car.productionYear > 2016) ? 'badge badge-danger' : 'badge-success'">
+                    [ngClass]="(car.price > 20000 && car.productionYear > 2016) ? 'badge badge-primary' : 'badge-success'">
                     {{car | carType}}
                 </span>
             </div>              

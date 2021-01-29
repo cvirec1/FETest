@@ -8,7 +8,9 @@ describe('CarSummaryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CarSummaryComponent ]
+      declarations: [
+        CarSummaryComponent
+      ]
     })
     .compileComponents();
   });

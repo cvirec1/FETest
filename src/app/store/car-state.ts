@@ -1,6 +1,5 @@
 import { Car } from '../shared/model/car';
 
-
 export interface CarState {
     readonly cars: Car[];
 }

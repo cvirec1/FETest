@@ -8,7 +8,6 @@ import { WelcomeComponent } from './welcome.component';
 
 const COMPONENTS = [WelcomeComponent, NavbarComponent];
 
-
 @NgModule({
   declarations: [...COMPONENTS],
   imports: [

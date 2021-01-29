@@ -8,6 +8,7 @@ import { CarSummary } from '../model/carSummary';
 })
 export class CarTypeCountPipe implements PipeTransform {
   summaryCars: CarSummary[];
+
   transform(cars: Car[]): CarSummary[] {
     let fair = 0;
     let expensive = 0;
